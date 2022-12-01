@@ -1,38 +1,271 @@
-.App {
-  text-align: center;
+/**{
+  font-family:'Open Sans Hebrew';
+  font-style:normal;
+} */
+
+/*------------------------buttons-----------------------*/
+.btnSignIn,.btnSearch,.btnNext{ 
+  background:#A0627B;
+  padding: 10px;
+  min-width: 200px;
+  border: none;
+  color: white;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius:4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btnSignIn:hover, .btnSearch:hover{
+  background:#F5F2F2;
+  color: #A0627B;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btnSearch,.btnNext{
+  padding: 5px;
+  min-width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btnNext:hover{
+  background-color:rgb(159, 57, 98);
+}
+
+span{
+  font-weight: bolder;
+}
+
+.btnYes{
+  background:#F5F2F2;
+  color: #A0627B;
+  border: none;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius:4px;
+  padding: 5px;
+  min-width: 100px;
+}
+.btnYes:hover{
+  box-shadow: 0px 6.07407px 12.1481px rgba(46, 103, 140, 0.12);
+}
+
+.btnPrice{
+  border: 1px solid #A0627B;
+  box-shadow: 2px 1px  4px rgba(99, 93, 96, 0.3);
+  border-radius: 7px;
+  padding:5px;
+  min-width: 100px;
+}
+.btnPrice:hover{
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ButtonsMainDiv{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.ButtonsMainDiv button{
+  margin: 5px;
+}
+
+/*------------------------input-----------------------*/
+input{
+  border:none;
+  border-bottom: 1px solid #B79BA6;
+  min-width: 220px;
+  margin: 5px;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputRow{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.formOne{
+  box-shadow:inset 0px -1px 0px #E9E3E5;
+  color:#B79BA6;
+  border:1px solid #EDE4E8;
+  border-radius: 12px;
+  background:rgba(255,255,255,0.01);
+  padding: 15px;
+  margin: 3px;
+}
+
+.formTwo{
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+  color:#A79CA0;
+  border: 0.5px solid #B7CEE8;
+  border-radius:12px;
+  background:rgba(255,255,255,0.01);
+  margin: 3px;
+}
+
+/*------------------------card-----------------------*/
+.cardRow{
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  padding: 20px;
+  border: 0.5px solid#B7CEE8;
+  border-radius: 12px;
+  background-color: white;
+  min-width: 300px;
+}
+
+.cardMain{
+  background:#efefef;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+}
+
+h3{
+  font-weight:normal;
+  margin-right: 5px;
+}
+
+.btnPlus{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 3px;
+  background-color: white;
+  font-size: 20px;
+}
+
+.btnOnOff{
+  background-color: white;
+  border: none;
+  color: #e7e7e7;
+  font-size: 30px;
+  background-color: none;
+}
+
+/*------------------------chip-----------------------*/
+.space{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 10px;
+}
+
+.chipName{
+  background:white;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 25px;
+  width: 300px;
+  text-align: center;
+}
+
+.chipMain{
+  background-color: #efefef;
+  margin-top: 5px;
+}
+
+.iconChip{
+  background-color: #A0627B;
+  border-radius: 30px;
+  min-width: 70px;
+  text-align: center;
   color: white;
+  box-shadow:0px 1px 1px rgba(0, 0 ,0, 0.25);
+  font-size: 25px;
+  font-weight: lighter;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.white{
+  color: rgb(255, 255, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.black{
+  color: black;
 }
+
+.positionChip{
+  position: relative;
+  margin: 10px;
+}
+
+.positionChip p{
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid #A0627B;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.positionBtn{
+  position: absolute;
+  right: -10px;
+  top:5px;
+  border: none;
+  background-color: white;
+  font-size: 25px;
+  border-radius: 50%;
+  width: 32px;
+}
+
+.rowChip{
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+}
+
+/*------------------------dialog-----------------------*/
+.dialogMainDiv{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.dialogDiv{
+  max-width: 480px; 
+  background:#F9F9F9;
+  box-shadow: 7px 7px 20px 10px rgba(46, 103, 140, 0.2), 0px 6px 60px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.dialogDiv button{
+  min-width: 160px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #EDE4E8;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 5px 0px;
+}
+
+.dialogDiv button:hover{
+  background-color: #f0bde2;
+}
+
+.dialogBtnDivOne{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.dialogBtnDivOne button{
+  color:  #A0627B;;
+}
+
+.dialogBtnDivTwo{
+  display: flex;
+  justify-content: space-between;
+}
+
